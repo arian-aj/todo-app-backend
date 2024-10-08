@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // 
 
-app.use("/api/todos", todoRouter); // 
+app.use("/api", todoRouter); // 
 
 // globale Fehlerbehandlung
 app.use((err, req, res, next) => {
